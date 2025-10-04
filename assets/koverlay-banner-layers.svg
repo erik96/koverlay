@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1600" height="400" viewBox="0 0 1600 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0e2233"/>
+      <stop offset="100%" stop-color="#0b2a3f"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.10"/>
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="14" stdDeviation="24" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1600" height="400" fill="url(#bg)"/>
+
+  <!-- Soft radial accents -->
+  <g opacity="0.18">
+    <radialGradient id="r1" cx="0.8" cy="0.2" r="0.5">
+      <stop offset="0%" stop-color="#1d99f3"/>
+      <stop offset="100%" stop-color="#1d99f3" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="r2" cx="0.2" cy="0.9" r="0.5">
+      <stop offset="0%" stop-color="#3daee9"/>
+      <stop offset="100%" stop-color="#3daee9" stop-opacity="0"/>
+    </radialGradient>
+    <rect width="1600" height="400" fill="url(#r1)"/>
+    <rect width="1600" height="400" fill="url(#r2)"/>
+  </g>
+
+  <!-- Layered cards motif on the right -->
+  <g filter="url(#shadow)" transform="translate(980,70) rotate(-6,260,130)">
+    <rect x="0"   y="0"   width="520" height="260" rx="26" fill="url(#card)" stroke="#a8d8ff" stroke-opacity="0.35" stroke-width="2"/>
+    <rect x="24"  y="20"  width="520" height="260" rx="26" fill="url(#card)" stroke="#a8d8ff" stroke-opacity="0.35" stroke-width="2"/>
+    <rect x="48"  y="40"  width="520" height="260" rx="26" fill="url(#card)" stroke="#a8d8ff" stroke-opacity="0.35" stroke-width="2"/>
+  </g>
+
+  <!-- Title block (left) -->
+  <g transform="translate(80,110)">
+    <text x="0" y="0" font-family="Inter,Segoe UI,Ubuntu,Arial,sans-serif" font-size="64" font-weight="700" fill="#e7f4ff">
+      KOverlay
+    </text>
+    <text x="0" y="54" font-family="Inter,Segoe UI,Ubuntu,Arial,sans-serif" font-size="24" fill="#c1d9ee" opacity="0.9">
+      Click-through overlay for KDE/Wayland • Qt 6 + QML + LayerShellQt
+    </text>
+    <text x="0" y="96" font-family="Inter,Segoe UI,Ubuntu,Arial,sans-serif" font-size="18" fill="#b5cce1" opacity="0.9">
+      Sticky notes • Keybindings • Cheat sheets • Hot-reloading config
+    </text>
+  </g>
+</svg>

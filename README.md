@@ -1,3 +1,12 @@
+<p align="center">
+  <img src="assets/koverlay-banner-layers.svg" alt="KOverlay — Wayland Overlay" width="100%">
+</p>
+
+
+[![Copr build status](https://copr.fedorainfracloud.org/coprs/erx96/KOverlay/package/koverlay/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/erx96/KOverlay/package/koverlay/)
+
+
+
 # KOverlay
 
 Click‑through, always‑on‑top **overlay panel** for Wayland desktops (tested on **Fedora KDE/Plasma Wayland**) built with **Qt 6 + QML + LayerShellQt**.  

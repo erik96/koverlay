@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0e2233"/>
+      <stop offset="100%" stop-color="#0b2a3f"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.10"/>
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="10" stdDeviation="20" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <rect width="512" height="512" fill="url(#bg2)"/>
+
+  <g filter="url(#shadow)" transform="translate(120,120) rotate(-8,136,96)">
+    <rect x="0" y="0"   width="272" height="176" rx="22" fill="url(#card)" stroke="#a8d8ff" stroke-opacity="0.35" stroke-width="1.5"/>
+    <rect x="18" y="16" width="272" height="176" rx="22" fill="url(#card)" stroke="#a8d8ff" stroke-opacity="0.35" stroke-width="1.5"/>
+    <rect x="36" y="32" width="272" height="176" rx="22" fill="url(#card)" stroke="#a8d8ff" stroke-opacity="0.35" stroke-width="1.5"/>
+  </g>
+
+  <circle cx="420" cy="404" r="6" fill="#1d99f3" opacity="0.9"/>
+  <circle cx="420" cy="404" r="64" fill="none" stroke="#1d99f3" stroke-opacity="0.12" stroke-dasharray="4 8"/>
+
+  <circle cx="256" cy="256" r="232" fill="none" stroke="#ffffff" stroke-opacity="0.06"/>
+</svg>

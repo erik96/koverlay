@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1f2e"/>
+      <stop offset="100%" stop-color="#183b5b"/>
+    </linearGradient>
+    <radialGradient id="blob" cx="65%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#1d99f3" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#1d99f3" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <rect width="512" height="512" fill="url(#bg)"/>
+  <rect width="512" height="512" fill="url(#blob)"/>
+
+  <g transform="translate(0,0)">
+    <circle cx="96" cy="416" r="48" fill="#3daee9" opacity="0.15"/>
+    <rect x="64" y="64" width="96" height="24" rx="12" fill="#22ffff" opacity="0.12"/>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="272" y="64" width="176" height="224" rx="24" 
+          fill="#ffffff" opacity="0.18" stroke="#a8d8ff" stroke-opacity="0.35" stroke-width="1.5"/>
+    <circle cx="424" cy="88" r="6" fill="#1d99f3" opacity="0.85"/>
+    <rect x="280" y="80" width="24" height="4" rx="2" fill="#1d99f3" opacity="0.6"/>
+  </g>
+
+  <circle cx="256" cy="256" r="232" fill="none" stroke="#ffffff" stroke-opacity="0.06"/>
+</svg>
