@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/koverlay">
+        <!-- Path is relative to this .qrc file's directory -->
+        <file>Overlay.qml</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,91 @@
+# ---- OS cruft ---------------------------------------------------------------
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+*.orig
+.directory
+
+# ---- Build artifacts (CMake / Ninja / Make) --------------------------------
+/build/
+/build-*/
+/cmake-build-*/
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+cmake_install.cmake
+install_manifest.txt
+Makefile
+CTestTestfile.cmake
+Testing/
+.ninja_deps
+.ninja_log
+compile_commands.json
+
+# ---- Binaries / libs --------------------------------------------------------
+/koverlay
+*.exe
+*.dll
+*.so
+*.dylib
+*.app/
+*.a
+*.lib
+*.o
+*.obj
+
+# ---- Qt / Qt Creator --------------------------------------------------------
+# qmake / qbs user files
+*.pro.user
+*.pro.user.*
+*.qbs.user
+*.qbs.user.*
+
+# Qt Creator project metadata
+*.user
+*.user.*
+CMakeLists.txt.user
+*.creator.*
+*.files
+*.includes
+.qmake.stash
+.qmake.cache
+
+# Qt generated sources (if they ever leak outside build dir)
+*_autogen/
+moc_*.cpp
+moc_*.h
+qrc_*.cpp
+ui_*.h
+*.qmlc
+*.jsc
+
+# ---- IDEs / Tooling ---------------------------------------------------------
+.vscode/
+.idea/
+.clangd/
+.cache/
+
+# ---- Logs / Reports ---------------------------------------------------------
+*.log
+*.ctest
+lcov.info
+*.gcno
+*.gcda
+*.gcov
+
+# ---- Packaging / Dist outputs ----------------------------------------------
+/dist/
+/package/
+*.tar
+*.tar.gz
+*.zip
+*.AppImage
+*.rpm
+*.deb
+
+# ---- Misc local stuff -------------------------------------------------------
+/_install/
+/_release/
+/_tmp/

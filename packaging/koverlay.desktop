@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=KOverlay
+Comment=Click-through overlay for keybindings (KDE Wayland)
+Exec=koverlay --show
+Categories=Utility;
+X-KDE-StartupNotify=false
