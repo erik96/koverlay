@@ -11,7 +11,7 @@ set(CMAKE_AUTOUIC ON)
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
 # ---- Deps ----
-find_package(Qt6 6.5 REQUIRED COMPONENTS Core Gui Widgets WaylandClient DBus Qml Quick)
+find_package(Qt6 6.5 REQUIRED COMPONENTS Core Gui GuiPrivate Widgets WaylandClient DBus Qml Quick)
 find_package(LayerShellQt REQUIRED)
 find_package(Wayland REQUIRED COMPONENTS Client)
 
